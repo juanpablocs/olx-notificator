@@ -1,0 +1,22 @@
+{
+   "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+   },
+   "browser_action": {
+      "default_icon": "assets/img/favicon.png",
+      "default_popup": "popup.html",
+      "default_title": "Notificador OLX"
+   },
+   "description": "Notificador OLX Open Source",
+   "homepage_url": "http://github.com/juanpablocs/olx-notificator/",
+   "icons": {
+      "32": "assets/img/favicon.png"
+   },
+   "manifest_version": 2,
+   "name": "Notificador OLX",
+   "permissions": [ "*://*.olx.com.pe/*","*://*.olx-st.com/*", "notifications", "cookies", "tabs", "alarms" ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7"
+}
